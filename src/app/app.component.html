@@ -1,0 +1,18 @@
+<div>
+  <h1>MyInfo</h1>
+</div>
+
+<form #userdetail = 'ngForm' (submit)="getuser(userdetail.value)" >
+  <input type="text" ngModel placeholder="Enter Your Name" name="Name" required /><br>
+  
+  <input type="email" ngModel placeholder="Enter Your Email" name="email" required /><br>
+  
+  <input type="password" ngModel placeholder="Enter Your Pasword" name="password" required /><br>
+
+  <button>Submit</button>
+  
+</form>
+
+<ul>
+  <li>{{user.Name}}:{{user.email}}</li>
+</ul>
